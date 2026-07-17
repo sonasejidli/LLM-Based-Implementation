@@ -3,7 +3,7 @@ Thin wrapper around the Anthropic API. The key point: the client is
 constructed with the key from app.config (which reads the environment),
 never a literal string.
 """
-import anthropic
+from openai import OpenAI
 
 from . import config
 
